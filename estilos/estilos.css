@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+font-family: 'Roboto', sans-serif;
+font-size: 62.5%;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+#header{
+    width:100%;
+    height:15vh;
+    background-color: #EC3B15;
+    background-image: linear-gradient(to right, #f01010, #eb1d16, #e7251c, #e22c21, #dd3225, #dc3627, #da3a2a, #d93d2c, #db402e, #dd4430, #df4732, #e14a34);
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    width:50px;
+    height:50px;
+    display:flex;
+    margin-left:10px;
+}
+
+.navegacion a {
+    text-decoration: none;
+    box-shadow: none;
+    color: #FFFFFF;
+    font-size:1.3em;
+    font-weight:bold;
+    padding:20px;
+}
+
+a:hover{
+    color: #111010;
+}
+
+.banner{
+    width:100vw;
+    height:50vh;
+}
+
+.imagen__principal{
+    width:100vw;
+    height:70vh;
+}
+
+.titulo{
+    margin-top:100px;
+    font-size: 1.4em;
+    font-weight: bold;
+    background-color: #EC3B15;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container__grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    column-gap: 20px;
+    padding:20px;
+}
+
+.imagen__servicios{
+    width:20vw;
+    height: 50vh;
+    object-fit: contain;
+}
+
+.texto{
+    width:100vw;
+    height:50vh;
+    background-color: #EC3B15;
+    color: #ffffff;
+    font-size: 1.2em;
+    text-align: center;
+    border: solid 2px #050505;
+    background-image: linear-gradient(to bottom, #f01010, #eb1d16, #e7251c, #e22c21, #dd3225, #dc3627, #da3a2a, #d93d2c, #db402e, #dd4430, #df4732, #e14a34);
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+}
+
+.aside__container{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    justify-items: center;
+    
+}
+
+.prepago{
+    width:20vw;
+    height: 50vh;   
+}
+
+.iframe{
+    width:20vw;
+    height: 50vh;
+}
+
+#footer{
+    width:100%;
+    height:15vh;
+    background-color: #EC3B15;
+    background-image: linear-gradient(to right, #f01010, #eb1d16, #e7251c, #e22c21, #dd3225, #dc3627, #da3a2a, #d93d2c, #db402e, #dd4430, #df4732, #e14a34);
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.footer__texto{
+    color: #ffffff;
+    font-size: 1.3em;
+    font-weight: lighter;
+    padding-left:40px;
+    
+}
+
+.footer__imagen{
+    position: relative;
+    right: 40px;
+    
+}
+
+/*PASATE A CLARO*/
+
+.container__grid__porta{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.imagen__movistar{
+    width: 30vw;
+    height: 70vh;
+}
+
+.imagen__personal{
+    width: 30vw;
+    height: 70vh;
+}
+.section__portabilidad{
+    display: flex;
+    margin: 20px;
+    column-gap: 30px;
+}
+
+.formulario{
+    width: 60vw;
+    height: 40vh;
+    background-color:#EC3B15;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 3px;
+    padding-top: 30px;
+    font-size: 1.4em;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.input{
+    margin-top: 20px;
+    padding: 10px;
+    border: solid 1px #F3EEEE;
+    text-align: center;
+}
+
+.boton{
+    width: 70px;
+    height: 40px;
+    margin: 20px;
+}
+
+/*LINEA NUEVA*/
+
+.container__linea__nva{
+    width:100%;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 3%;
+}
+
+.titulo__linea__nueva{
+    font-size: 2em;
+    font-weight: bold;
+    color:#ffffff;
+}
+
+.subtitulo__linea__nueva{
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #EC3B15;
+    background-color: #a59e9ec2;
+}
+
+.beneficios__linea__nueva{
+    font-size: 1.8em;
+    color:#ffffff;
+    font-weight: bold;
+}
+
+.listado__beneficios{
+    font-size: 1.8em;
+    color: #ffffff;
+}
+
+.texto__lnva{
+    background-image: radial-gradient(circle, #e12929, #e02625, #df2222, #dd1f1e, #dc1b1a, #da1918, #d71615, #d51313, #d11212, #ce1111, #ca0f0f, #c70e0e);
+    width: 30vw;
+    height: 70vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-top: 6%;
+    margin-left: 3%;
+}
+
+.imagen__linea__nueva{
+   width: 30vw;
+   height:70vh;
+   object-fit: contain;
+   display:flex;
+   flex-direction:column;
+   justify-content:center;
+   margin-top: 6%;
+   margin-bottom: 7%;
+}
+
+.form__lnva{
+    background-image: radial-gradient(circle, #e12929, #e02625, #df2222, #dd1f1e, #dc1b1a, #da1918, #d71615, #d51313, #d11212, #ce1111, #ca0f0f, #c70e0e);
+    width: 30vw;
+    height: 70vh;
+    background-color:#EC3B15;
+    text-align: center;
+    margin: auto;
+    margin-top: 6%;
+    margin-bottom: 7%;
+    border-radius: 3px;
+    padding-top: 20px;
+    font-size: 1.3em;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.input__lnva{
+    margin-top: 20px;
+    padding: 10px;
+    border: solid 1px #F3EEEE;
+    text-align: center;
+}
+
+.boton__lnva{
+    width: 70px;
+    height: 40px;
+    margin: 20px;
+}
+
+/*VENTA DE CHIPS*/
+
+.container__chips{
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    background-color: #111010;
+    width: 100vw;
+    height: 90vh;
+    
+}
+
+.titulo__chips{
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.caja__vtachips{
+   width: 40vw;
+   height: 50vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-image: radial-gradient(circle, #e12929, #e02625, #df2222, #dd1f1e, #dc1b1a, #da1918, #d71615, #d51313, #d11212, #ce1111, #ca0f0f, #c70e0e);
+   margin-top: 2%;
+
+}
+
+
+
+/*CONTACTO*/
+
+.cajaform__contacto{
+    background-image: url(../assets/man-using-mobile-smartphone.jpg);
+    width: 60vw;
+    height: 70vh;
+    position: relative;
+    left: 280px;
+    margin-top: 150px;
+}
+
+.form__contacto{
+    width: 300px;
+    height: 300px;
+    background-color: #dd93d9dc;
+    margin: auto;
+    position: relative;
+    top: 50px;
+    text-align: center;
+    font-size: 1.6em;
+}
+
+
+@media screen and (max-width: 480px){
+    .container__grid{
+    grid-template-columns: auto;
+
+    }
+    #header{
+     height: 30vh;
+     flex-direction: column;
+     flex-wrap: nowrap;
+     justify-content:center;
+     align-items:center;
+     gap: 5px;
+    
+    }
+    .navegacion a {
+     display: flex;
+     flex-direction: column;
+     padding:0;
+     justify-content:center;
+     align-items:center;
+     
+    }
+    .logo{
+        margin: auto;
+    }
+    .imagen__principal{
+        height: 50vh;
+    }
+    .imagen__servicios{
+    width:100vw;
+    height: 50vh;
+    object-fit: contain;
+    }
+    .titulo{
+    font-size:1.4em;
+    margin: 0;
+    text-align: center;
+    }
+    #footer{
+     height: 30vh;
+     display:flex;
+     flex-direction: column;
+     justify-content: center;
+     align-content: center;
+     
+    }
+    .footer__texto{
+    display: flex;
+     flex-direction: column;
+     padding: 5px;
+     justify-content:center;
+     align-items:center;
+    }
+    .footer__imagen{
+    position: relative;
+    left: 50%;
+    padding-top:5px;
+    }
+    .iframe{
+        width:40vw;
+        height:40vh;
+
+    }
+    .prepago{
+    width:40vw;
+    height:40vh;
+    }
+    .texto{
+    font-size:1em;
+    }
+}
