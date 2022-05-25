@@ -4,95 +4,146 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>MC MÓVIL</title>
     <link rel="shortcut icon" href="./Assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./Estilos/estilos.css">
+    
 </head>
 
 <body>
-   
  <header id="header">
-    <div>
-      <a href="#"><img src="./assets/mcmovilperfil.jpg"alt="logo" class= "logo animate__animated animate__heartBeat"></a>  
-    </div>
-
-    <div>
-       <nav class="navegacion"> 
-          <a href="#" class="nav">INICIO</a>
-          <a href="./Paginas/pasateaclaro.html"class="nav">PASATE A CLARO</a>
-          <a href="./Paginas/lineanueva.html"class="nav">LINEA NUEVA</a>
-          <a href="./Paginas/ventadechips.html"class="nav">VENTA DE CHIPS Y RECARGAS</a>
-          <a href="./Paginas/contacto.html"class="nav">CONTACTO</a>
-       </nav>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+       <div class="container-fluid encabezado">
+          <a class="navbar-brand" href="./index.html"><img src="./assets/mcmovilperfil.jpg" alt="logo" class= "logo animate__animated animate__heartBeat"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse navheader" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 link">
+                 <li class="nav-item">
+                   <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link" href="./paginas/pasateaclaro.html">PASATE A CLARO</a>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link" href="./paginas/lineanueva.html">LINEA NUEVA</a>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link" href="./paginas/ventadechips.html">VENTA DE CHIPS Y RECARGAS</a>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link" href="./paginas/contacto.html"> CONTACTO</a>
+                </li>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                   <li><a class="dropdown-item" href="#">Action</a></li>
+                   <li><a class="dropdown-item" href="#">Another action</a></li>
+                   <li><hr class="dropdown-divider"></li>
+                   <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+               </ul>
+            </div>
+         </div>
+      </nav>
  </header>
 
- <main> 
-    <section>
-       <div class="banner">
-          <img src="./assets/anuncio3.jpg" alt="imagenPrincipal" class="imagen__principal"/>
-       </div>
-    </section>
-    
+ <main>
+    <div class="container-video">
+      <video class="video" src="./assets/WhatsApp Video 2022-05-25 at 1.52.56 AM.mp4" autoplay muted loop >
+       </video>
+    </div>
+
+
     <div class="titulo">
-       <h1>SERVICIOS</h1>
+      <h1>SERVICIOS</h1>
+     </div>
+    
+    <div class="row">
+       
+      <div class="col-sm-4">
+         <div class="card back">
+            <div class="card-body">
+               <h5 class="card-title">PASATE A CLARO</h5>
+               <img src="./assets/cambiate_a_claro.jpg" maxwidth="100%" height="auto" class="img-fluid imagen-servicios rounded mx-auto d-block">
+               <p class="card-text">Cambiate a Claro y obtené descuentos exclusivos durante un año.</p>
+               <a href="./paginas/pasateaclaro.html" class="btn btn-primary mas-info">MAS INFO</a>
+            </div>
+         </div>
       </div>
 
-    <section class="container__grid">
-       <div>
-          <a href="./Paginas/pasateaclaro.html"><img src="./assets/cambiate_a_claro.jpg" class="imagen__servicios" alt="PasateAclaro"></a>
-       </div>
+      <div class="col-sm-4">
+         <div class="card back">
+            <div class="card-body">
+             <h5 class="card-title">LÍNEA NUEVA</h5>
+             <img src="./assets/lineanueva.jpg" maxwidth="100%" height="auto" class="img-fluid imagen-servicios rounded mx-auto d-block">
+             <p class="card-text">Pedí tu número nuevo con un 70% de descuento en tu plan.</p>
+             <a href="#" class="btn btn-primary mas-info">MAS INFO</a>
+          </div>
+        </div>
+      </div>
 
-       <div>
-          <a href="./Paginas/lineanueva.html"><img src="./Assets/lineanueva.jpg" class= "imagen__servicios" alt="LineaNueva"></a>
-       </div>
-
-       <div>
-          <a href="./Paginas/ventadechips.html"><img src="./assets/prepagomensual.jpg" class="imagen__servicios" alt="VentaDeChips"></a> 
-       </div>
-      </section>
- </main>
+      <div class="col-sm-4">
+         <div class="card back">
+            <div class="card-body">
+             <h5 class="card-title">VENTA DE CHIPS Y RECARGAS</h5>
+             <img src="./assets/clarorecargas.png" maxwidth="100%" height="auto" class="img-fluid imagen-servicios rounded mx-auto d-block">
+             <p class="card-text">Vendé Claro y suma beneficios para tu negocio.</p>
+             <a href="#" class="btn btn-primary mas-info">MAS INFO</a>
+          </div>
+        </div>
+      </div>
 
  <aside>
-    <div class="texto">
-       <h2>CON CLARO CONECTATE AL 100%</h2>
-        <br> <P>Claro Prepago y Claro Abono Mensual te permiten estar conectado todo el día. </br>
-        <p> Tenes beneficios exclusivos en todos los planes: 
-          <br> </br> 
+    <div class="container-texto">
+       <div class="texto">
+          <h1>CON CLARO CONECTATE AL 100%</h1>
+          <br><h2>Claro Prepago y Claro Abono Mensual te permiten estar conectado todo el día.</h2></br>
+          <h2>Tenes beneficios exclusivos en todos los planes:</h2> 
+          
             <ul style="list-style-type:none"> 
-               <li class="aside__lista--"> Llamadas Ilimitadas</li>
-               <li class="aside__lista--"> Whatsapp Gratis</li>
-               <li class="aside__lista--"> Súper Packs</li>
-               <li class="aside__lista--"> Amazon Prime</li>
-               <li class="aside__lista--"> Claro vídeo y mucho más.</li>
-
-            </ul>
-       </p>
-    </div> 
- </aside>
-
- <aside class="aside__container">
-    <div>
-       <video src="./assets/WhatsApp Video 2022-05-17 at 7.02.26 PM.mp4" controls="autoplay" class="video__prepago"></video>
-         <p>PREPAGO MENSUAL $4OO</p>
-    </div>
-
-    <div>
-       <iframe class="iframe" src="https://www.youtube.com/embed/K2b5yqqcybQ" 
-        title="youTubeVideoPlayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen></iframe>
-        <P> CONEXIÓN CLARO</P>
+               <h3><li class="aside__lista--"> Llamadas Ilimitadas</li></h3>
+               <h3><li class="aside__lista--"> Whatsapp Gratis</li></h3>
+               <h3><li class="aside__lista--"> Súper Packs</li></h3>
+               <h3><li class="aside__lista--"> Amazon Prime</li></h3>
+               <h3><li class="aside__lista--"> Claro vídeo y mucho más.</li></h3>
+          </ul>
+       </div>
     </div>
  </aside>
 
-  <footer id="footer">
-    <p class="footer__texto">Dirección: Dean Funes 328</p>
-    <p class="footer__texto">Teléfono: 3512432153</p>
-    <p class="footer__texto">E-mail: mcmovil@gmail.com</p>
-    <a href="https://www.facebook.com/Mc-M%C3%B3vil-Agente-Oficial-de-Claro-105366285494595" 
-    target="blank"> <img src="./assets/facebook1.svg" class="footer__imagen" alt="logoFacebook" /></a>
-    <a href="https://www.instagram.com/mcmovil_agenteclaroar/" target="_blank"> <img src="./assets/instagram_f_icon-icons.com_65485.png" class="footer__imagen" alt="logoInstagram" /> </a>
+ <aside class="container-aside">
+     <div class="container-fluid container-aside">
+        <div class="">
+          <video src="./assets/WhatsApp Video 2022-05-17 at 7.02.26 PM.mp4" controls="autoplay" class="video__prepago"></video>
+          <p>PREPAGO MENSUAL $4OO</p>
+        </div>
+        <div class="">
+           <iframe class="iframe" src="https://www.youtube.com/embed/K2b5yqqcybQ" 
+             title="youTubeVideoPlayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write encrypted-media; gyroscope; picture-in-picture" 
+             allowfullscreen></iframe>
+             <P> CONEXIÓN CLARO</P>
+        </div>
+    </div>
+ </aside>
+
+ <footer class="container-footer" id="footer">
+    <div class="container-fluid">
+         <div class="container-footer">
+          <p class="footer-texto">MC MÓVIL SA </p>
+          <p class="footer-texto">DEAN FUNES 328, CÓRDOBA ARGENTINA</p>
+          <p class="footer-texto">3512365483</p>
+
+          <a href="https://www.instagram.com/mcmovil_agenteclaroar/"><img class="footer-imagen" src="./assets/instagram_f_icon-icons.com_65485.png" alt="instagram"></a>
+          <a href="https://www.instagram.com/mcmovil_agenteclaroar/"><img class="footer-imagen" src="./assets/facebook1.svg" alt="facebook"></a>
+       </div>
+    </div>
  </footer>
+
+ <!-- Option 1: Bootstrap Bundle with Popper -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>

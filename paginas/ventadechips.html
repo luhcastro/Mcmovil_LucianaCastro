@@ -7,75 +7,102 @@
     <title>VENTA DE CHIPS Y RECARGAS</title>
     <link rel="shortcut icon" href="../Assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/estilos.css">
 </head>
 
 <body>
    <header id="header">
-      <div>
-        <a href="#"><img src="../assets/mcmovilperfil.jpg"alt="logo" class= "logo animate__animated animate__heartBeat"></a>  
-      </div>
-  
-      <div>
-         <nav class="navegacion"> 
-            <a href="../index.html" class="nav">INICIO</a>
-            <a href="../paginas/pasateaclaro.html"class="nav">PASATE A CLARO</a>
-            <a href="../paginas/lineanueva.html"class="nav">LINEA NUEVA</a>
-            <a href="#"class="nav">VENTA DE CHIPS Y RECARGAS</a>
-            <a href="../paginas/contacto.html"class="nav">CONTACTO</a>
-         </nav>
-      </div>
+      <nav class="navbar navbar-expand-lg navbar-light">
+         <div class="container-fluid encabezado">
+            <a class="navbar-brand" href="../index.html"><img src="../assets/mcmovilperfil.jpg" alt="logo" class= "logo animate__animated animate__heartBeat"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+              <div class="collapse navbar-collapse navheader" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 link">
+                   <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">PASATE A CLARO</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="../paginas/lineanueva.html">LINEA NUEVA</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="../paginas/ventadechips.html">VENTA DE CHIPS Y RECARGAS</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="../paginas/contacto.html"> CONTACTO</a>
+                  </li>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <li><a class="dropdown-item" href="#">Action</a></li>
+                     <li><a class="dropdown-item" href="#">Another action</a></li>
+                     <li><hr class="dropdown-divider"></li>
+                     <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                 </ul>
+              </div>
+           </div>
+        </nav>
    </header>
 
  <main>
     <h1 class="titulo__chips animate__animated animate__lightSpeedInLeft">VENDÉ CLARO Y GANÁ</h1>
-      <div>
-          <section class="container__chips">
-             <div class="caja__vtachips"> 
-                <h2>PRODUCTOS</h2>
-                <p><br>CHIPS PREPAGOS</p></br>
-                <p><br>RECARGA VIRTUAL</p></br>
-                <p><br>PORTABILIDAD NUMERICA</p></br>
-             </div>
-   
-             <div class="caja__vtachips">
-                <h2>GANANCIAS</h2>
-                <p><br>4% POR CADA RECARGA</p></br>
-                <p><br>100% POR LA VENTA DE CHIPS</p></br>
-                <p><br>$1000 POR CADA PORTABILIDAD</p></br>
-             </div>
-   
-             <div class="caja__vtachips">
-                <h2>ZONAS HABILITADAS</h2>
-                <p><br>INTERIOR DE CÓRDOBA</p></br>
-                <p><br>MERLO, SAN LUIS</p></br>
-                <p><br>PROVINCIA DE LA RIOJA</p></br>
-             </div>
+    <div>
+       <section class="container__chips">
+          <div class="caja__vtachips"> 
+             <h2>PRODUCTOS</h2>
+             <p><br>CHIPS PREPAGOS</p></br>
+             <p><br>RECARGA VIRTUAL</p></br>
+             <p><br>PORTABILIDAD NUMERICA</p></br>
+            </div>
+            
+            <div class="caja__vtachips">
+               <h2>GANANCIAS</h2>
+               <p><br>4% POR CADA RECARGA</p></br>
+               <p><br>100% POR LA VENTA DE CHIPS</p></br>
+               <p><br>$1000 POR CADA PORTABILIDAD</p></br>
+            </div>
+            
+            <div class="caja__vtachips">
+               <h2>ZONAS HABILITADAS</h2>
+               <p><br>INTERIOR DE CÓRDOBA</p></br>
+               <p><br>MERLO, SAN LUIS</p></br>
+               <p><br>PROVINCIA DE LA RIOJA</p></br>
+            </div>
          </section>
-     </div>
-     
-     <section class="form animate__animated animate__bounceInDownp">
-      <div class="formulario">  
-        <h2 class="titulo__form">QUIERO QUE ME LLAMEN</h2>
-        <form action="">
-             <ul style="list-style-type:none">
-                 <li><input type="text" class="input" placeholder="NOMBRE Y APELLIDO"></li>
-                 <li><input type="tel" class="input" placeholder="TELÉFONO"></li>
-                 <li><input type="submit" class="boton" value="ENVIAR"></li>
-             </ul>
-         </form>
       </div>
-    </section>
+      
+      <section class="form animate__animated animate__bounceInDownp">
+         <div class="formulario">
+            <h2 class="titulo__form">QUIERO QUE ME LLAMEN</h2>
+            <form action="">
+               <ul style="list-style-type:none">
+                  <li><input type="text" class="input" placeholder="NOMBRE Y APELLIDO"></li>
+                  <li><input type="tel" class="input" placeholder="TELÉFONO"></li>
+                  <li><input type="submit" class="boton" value="ENVIAR"></li>
+               </ul>
+            </form>
+         </div>
+      </section>
  </main>
 
- <footer id="footer">
-   <p class="footer__texto">Dirección: Dean Funes 328</p>
-   <p class="footer__texto">Teléfono: 3512432153</p>
-   <p class="footer__texto">E-mail: mcmovil@gmail.com</p>
-   <a href="https://www.facebook.com/Mc-M%C3%B3vil-Agente-Oficial-de-Claro-105366285494595" 
-   target="blank"> <img src="../assets/facebook1.svg" class="footer__imagen" alt="logoFacebook" /></a>
-   <a href="https://www.instagram.com/mcmovil_agenteclaroar/" target="_blank"> <img src="../assets/instagram_f_icon-icons.com_65485.png" class="footer__imagen" alt="logoInstagram" /> </a>
-</footer>
-   
+ <footer class="container-footer" id="footer">
+   <div class="container-fluid">
+        <div class="container-footer">
+         <p class="footer-texto">MC MÓVIL SA </p>
+         <p class="footer-texto">DEAN FUNES 328, CÓRDOBA ARGENTINA</p>
+         <p class="footer-texto">3512365483</p>
+ 
+         <a href="https://www.instagram.com/mcmovil_agenteclaroar/"><img class="footer-imagen" src="../assets/instagram_f_icon-icons.com_65485.png" alt="instagram"></a>
+         <a href="https://www.instagram.com/mcmovil_agenteclaroar/"><img class="footer-imagen" src="../assets/facebook1.svg" alt="facebook"></a>
+      </div>
+   </div>
+ </footer>
+ 
+ <!-- Option 1: Bootstrap Bundle with Popper -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
