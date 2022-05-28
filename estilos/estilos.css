@@ -111,7 +111,8 @@ body{
 }
 
 .card-text{
-    font-size: 1.4em;
+    font-size: 1.5em;
+    font-weight: 500;
     text-align: center;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -183,15 +184,12 @@ body{
     width:100%;
     height:15vh;
     background-image: linear-gradient(to right, #f01010, #eb1d16, #e7251c, #e22c21, #dd3225, #dc3627, #da3a2a, #d93d2c, #db402e, #dd4430, #df4732, #e14a34);
-}
-.container-footer{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
-    gap: 2em;
-   
+    justify-content: space-between;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 .footer-texto{
@@ -202,62 +200,47 @@ body{
 
 .footer-imagen{
     display: flex;
-    width:3rem;
+    width: 3rem;
 }
 
 /*PASATE A CLARO*/
 
-.container__grid__porta{
-    display:grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
+.container-porta{
+    margin-left: 20%;
+    margin-top: 3%;
 }
 
-.imagen__movistar{
-    width: 30vw;
-    height: 70vh;
-    margin-top:5%;
-    object-fit: contain;
+.imagen-movistar{
+    object-fit: cover;
     transition: all 1s
 }
 
-.imagen__movistar:hover{
+.imagen-movistar:hover{
 
     transform: scale(1.1);
 }
-
-.imagen__personal{
-    width: 30vw;
-    height: 70vh;
-    margin-top:5%;
-    object-fit: contain;
+.font-portabilidad{
+    font-size: 1.8em;
+}
+.imagen-personal{
+    object-fit: cover;
     transition: all 1s
 }
 
-.imagen__personal:hover{
+.imagen-personal:hover{
     transform: scale(1.1);
-}
-.section__portabilidad{
-    font-size:1.4em;
-    font-weight:bold;
-    display: flex;
-    margin: 20px;
-    column-gap: 30px;
 }
 
 .formulario{
     width: 60vw;
-    height: 50vh;
+    height: 40vh;
     background-color:#EC3B15;
     text-align: center;
     margin: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 5%;
+    margin-bottom: 5%;
     border-radius: 3px;
-    padding-top: 30px;
+    padding-top: 2%;
     font-size: 1.4em;
     color: #FFFFFF;
     font-weight: bold;
@@ -269,11 +252,13 @@ body{
 }
 
 .input{
-    margin-top: 20px;
-    padding: 10px;
+    margin: auto;
+    padding: 2%;
     border: solid 1px #F3EEEE;
     text-align: center;
-    transition: all 5s;
+    transition: all 1s;
+    width: 30%;
+    height: 10%;
 }
 
 .input:focus{
@@ -282,9 +267,8 @@ body{
 }
 
 .boton{
-    width: 70px;
-    height: 40px;
-    margin: 20px;
+    width: 6rem;
+    height: 4rem;
 }
 
 /*LINEA NUEVA*/
