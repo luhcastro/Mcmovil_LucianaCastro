@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+@import "variables";
+@import "base";
+@import "estructura";
+@import "componentes";
+
+
+
+
+/*PASATE A CLARO*/
+
+.container-porta{
+    margin-left: 20%;
+    margin-top: 3%;
+}
+
+.imagen-movistar{
+    object-fit: cover;
+    transition: all 1s
+}
+
+.imagen-movistar:hover{
+
+    transform: scale(1.1);
+}
+.font-portabilidad{
+    font-size: 1.8em;
+}
+.imagen-personal{
+    object-fit: cover;
+    transition: all 1s
+}
+
+.imagen-personal:hover{
+    transform: scale(1.1);
+}
+
+.formulario{
+    width: 60vw;
+    height: 40vh;
+    background-color:#EC3B15;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 3px;
+    padding-top: 2%;
+    font-size: 1.4em;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.formulario:hover{
+    background-color: #000000;
+    color: #EC3B15
+}
+
+.input{
+    margin: auto;
+    padding: 2%;
+    border: solid 1px #F3EEEE;
+    text-align: center;
+    transition: all 1s;
+    width: 30%;
+    height: 10%;
+}
+
+.input:focus{
+    width:40%;
+    height:40%;
+}
+
+.boton{
+    width: 6rem;
+    height: 4rem;
+}
+
+/*LINEA NUEVA*/
+
+.container__linea__nva{
+    width:100%;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 3%;
+}
+
+.titulo__linea__nueva{
+    font-size: 2em;
+    font-weight: bold;
+    color:#ffffff;
+}
+
+.subtitulo__linea__nueva{
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #EC3B15;
+    background-color: #a59e9ec2;
+}
+
+.beneficios__linea__nueva{
+    font-size: 1.8em;
+    color:#ffffff;
+    font-weight: bold;
+}
+
+.listado__beneficios{
+    font-size: 1.8em;
+    color: #ffffff;
+}
+
+.texto__lnva{
+    background-image: radial-gradient(circle, #e12929, #e02625, #df2222, #dd1f1e, #dc1b1a, #da1918, #d71615, #d51313, #d11212, #ce1111, #ca0f0f, #c70e0e);
+    width: 30vw;
+    height: 70vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-top: 6%;
+    margin-left: 3%;
+    transition: all 3s;
+}
+
+.texto__lnva:hover {
+    transform: scale(1.1);
+}
+
+.imagen__linea__nueva{
+   width: 30vw;
+   height:70vh;
+   object-fit: contain;
+   display:flex;
+   flex-direction:column;
+   justify-content:center;
+   margin-top: 6%;
+   margin-bottom: 7%;
+   transition: all 3s;
+}
+
+.imagen__linea__nueva:hover {
+    transform: scale(1.1);
+}
+
+.form__lnva{
+    margin-right: 1%;
+    background-image: radial-gradient(circle, #e12929, #e02625, #df2222, #dd1f1e, #dc1b1a, #da1918, #d71615, #d51313, #d11212, #ce1111, #ca0f0f, #c70e0e);
+    width: 30vw;
+    height: 70vh;
+    background-color:#EC3B15;
+    text-align: center;
+    margin: auto;
+    margin-top: 6%;
+    margin-bottom: 7%;
+    border-radius: 3px;
+    padding-top: 20px;
+    font-size: 1.3em;
+    color: #FFFFFF;
+    font-weight: bold;
+    transition: all 3s;
+}
+
+.form__lnva:hover {
+    transform: scale(1.1);
+}
+
+.input__lnva{
+    margin-top: 20px;
+    padding: 10px;
+    border: solid 1px #F3EEEE;
+    text-align: center;
+}
+
+.boton__lnva{
+    width: 70px;
+    height: 40px;
+    margin: 20px;
+}
+
+/*VENTA DE CHIPS*/
+
+.container__chips{
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 1%;
+}
+
+.titulo__chips{
+  margin-top: 2%;
+  font-size: 2.6em;
+  color: #000000;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.caja__vtachips{
+   width: 30vw;
+   height: 70vh;
+   margin-left: 1%;
+   margin-right: 2%;
+   font-size: 1.6em;
+   border-radius: 5px;
+   color: #F3EEEE;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-image: linear-gradient(to bottom, #f70606, #f11314, #ea1c1d, #e32325, #dc292b);
+   transition: all 3s
+}
+
+.caja__vtachips:hover{
+    transform: scale(1.1);
+}
+
+/*CONTACTO*/
+
+.contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cajaform__contacto{
+    width: 70vw;
+    height: 70vh;
+    row-gap: 5%;
+    color: #FFFFFF;
+    font-size: 1.6em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    margin-top: 3%;
+    animation-name: animacion__contacto;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+fieldset{
+    width: 400px;
+}
+
+.input__contacto{
+    margin: 3%;
+    text-align: center;
+    width:50%;
+    height:30px;
+}
+
+.input__contacto:focus{
+    width:60%;
+    height:40px;
+}
+@keyframes animacion__contacto {
+    0% {background-color: #d11212(207, 47, 7)(241, 10, 10);} /*Amarillo*/
+   25% {background-color: #d93d2c;} /*Naranja*/
+   50% {background-color: #000000;} /*Negro*/
+   75% {background-color: #d11212;} /*Otra vez naranja*/
+  100% {background-color: #000000;} /*Otra vez amarillo*/
+}
+
