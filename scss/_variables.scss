@@ -1,2 +1,57 @@
 $gradiente:linear-gradient(to right, #f01010, #eb1d16, #e7251c, #e22c21, #dd3225, #dc3627, #da3a2a, #d93d2c, #db402e, #dd4430, #df4732, #e14a34);
-$transition-collapse:         height .35s ease;
+
+$transition-collapse: height .35s ease;
+
+$color-oficial: #EC3B15;
+
+$color-texto: #000000;
+
+$tamanio:(
+    width:30em,
+    height:30em,
+);
+
+.boton{
+  width:50%;
+  height:15%;
+  background-color: #EC3B15;
+  color: #ffffff;
+  border: .15em solid;
+  border-radius: 5em;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.3em;
+  line-height: 2em;
+  cursor: pointer;
+  animation: opacityPulse 5s ease-out;
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
+
+@mixin boton {
+  width:50%;
+  height:15%;
+  background-color: #EC3B15;
+  color: #ffffff;
+  border: .15em solid;
+  border-radius: 5em;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.3em;
+  line-height: 2em;
+  cursor: pointer;
+  animation: opacityPulse 5s ease-out;
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
+
+@mixin item {
+  width: 100%;
+  font-size: 1.4em;
+  font-weight: lighter;
+  text-align: center;
+  border: 1px;
+  padding: 1%;
+  background-color: $color-oficial;
+  color: #ffffff;
+}

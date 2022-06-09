@@ -49,10 +49,121 @@
     
 }
        
-/*FOOTER*/
+.container-video{
+    width: 100%;
+    height: 70vh;
+    background-color: #000000;
+}
+.video{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
 
-#footer{
+.titulo{
+    font-size: 1.6em;
+    font-weight: bold;
+    background-color: #EC3B15;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.card-img-top{
+    transition: all 1s;
+    &:hover{
+    transform: scale(1.2);
+    }
+}
+
+.card-title{
+    color: #EC3B15;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
     margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.card-text{
+    font-size: 1.8em;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+.container-texto{
+    margin-top: 1%;
+    width:100%;
+    height:55vh;
+    background-image: linear-gradient(to bottom, #f01010, #eb1d16, #e7251c, #e22c21, #dd3225, #dc3627, #da3a2a, #d93d2c, #db402e, #dd4430, #df4732, #e14a34);
+}
+
+.texto{
+    padding-top: 3%;
+    width:100%;
+    height:50vh;
+    color: #ffffff;
+    font-size: 1.4em;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+}
+
+
+.container-aside{
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.video-prepago{
+    width:40vw;
+    height: 50vh;
+    transition: all 1s;
+    &:hover{
+        transform: scale(1.2);
+    }
+} 
+
+.iframe{
+    width:40vw;
+    height: 50vh;
+    transition: all 1s;
+    &:hover{
+        transform: scale(1.2);
+    transform: scale(1.2);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .video-prepago{
+     width:80vw;
+     height: 70vh;
+     margin: 1%;
+    }
+     .iframe{
+     width:80vw;
+     height: 70vh;
+     margin: 1%;
+     }
+}
+    
+#footer{
     width:100%;
     height:15vh;
     background-image: $gradiente;
@@ -68,15 +179,13 @@
     color: #ffffff;
     font-size: 1.4em;
     font-weight: lighter;
-    &:hover{
-        background-color: #000000;
-        }
 }
 
 .footer-imagen{
     display: flex;
     width: 3rem;
 }
+
 @media screen and (max-width: 576px) {
     #footer {
       height: 30vh;
@@ -91,4 +200,149 @@
           font-size: 1em;
         } 
     }
+}
+
+/*PASATE A CLARO*/
+
+.container-porta{
+    margin-top: 3%;
+    column-gap: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card-body{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.font-portabilidad{
+    font-size: 1.6em;
+}
+
+.imagen-movistar{
+    width: 100%;
+    height: 70%;
+    margin: auto;
+    object-fit: contain;
+    transition: all 1s;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.imagen-personal{
+    width: 100%;
+    height: 70%;
+    margin: auto;
+    object-fit: contain;
+    transition: all 1s;
+    &:hover{
+     transform: scale(1.1); 
+    }
+}
+
+/*LINEA NUEVA*/
+
+.texto-lnva{
+   text-align: center;
+} 
+
+.titulo-lnueva {
+  margin-top: 3%;
+  font-size: 2em;
+  font-weight: bold;
+  color: $color-texto;
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+.subtitulo-lnueva {
+  display: inline-block;
+  font-size: 1.8em;
+  font-weight: bold;
+  background-color: #DC2727;
+  color: #FFFFFF;
+}
+                
+.beneficios-lnueva {
+  list-style: none;
+  font-size: 1.8em;
+  color:#000000;
+  font-weight: bold;
+} 
+
+.listado-beneficios{
+  font-size: 1.8em;
+  color: #000000;
+}  
+
+                        
+/*VENTA DE CHIPS*/
+
+  .chips{
+      margin: auto;
+  }
+
+  /*CONTACTO*/
+
+.contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cajaform__contacto{
+    width: 70vw;
+    height: 70vh;
+    row-gap: 5%;
+    color: #FFFFFF;
+    font-size: 1.6em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    margin-top: 3%;
+    animation-name: animacion__contacto;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+fieldset{
+    width: 400px;
+}
+
+.input__contacto{
+    margin: 3%;
+    text-align: center;
+    width:50%;
+    height:30px;
+}
+
+.input__contacto:focus{
+    width:60%;
+    height:40px;
+}
+@keyframes animacion__contacto {
+    0% {background-color: #d11212(207, 47, 7)(241, 10, 10);} 
+   25% {background-color: #d93d2c;}
+   50% {background-color: #000000;} 
+   75% {background-color: #d11212;} 
+  100% {background-color: #000000;} 
 }
