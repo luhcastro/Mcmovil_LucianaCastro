@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
-.boton, .boton-porta, .boton-chips, .boton-lnva {
-  width: 50%;
+.boton {
+  width: 30rem;
+  height: 10rem;
   height: 15%;
   background-color: #EC3B15;
   color: #ffffff;
@@ -9,8 +10,6 @@
   text-transform: uppercase;
   text-align: center;
   font-size: 1.3em;
-  line-height: 2em;
-  cursor: pointer;
   animation: opacityPulse 5s ease-out;
   animation-iteration-count: infinite;
   opacity: 0; }
@@ -24,45 +23,37 @@
   flex-direction: column;
   align-items: center;
   justify-content: center; }
-
-.navbar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
+  #header .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    #header .navbar .nav-link {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      box-shadow: none;
+      color: #FFFFFF !important;
+      font-size: 1.4em;
+      font-weight: lighter; }
+      #header .navbar .nav-link:hover {
+        background-color: #000000; }
 
 .logo {
   width: 8rem;
   height: 8rem;
   border-radius: 5%; }
 
-.nav-link {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  box-shadow: none;
-  color: #FFFFFF !important;
-  font-size: 1.4em;
-  font-weight: lighter; }
-  .nav-link:hover {
-    background-color: #000000; }
-
-@media screen and (max-width: 768px) {
-  #header {
-    height: 40vh;
-    font-size: 1em; } }
-
 .container-video {
   width: 100%;
   height: 70vh;
   background-color: #000000; }
-
-.video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; }
+  .container-video .video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
 
 .titulo {
   font-size: 1.6em;
@@ -97,21 +88,20 @@
   margin-top: 1%;
   width: 100%;
   height: 55vh;
-  background-image: linear-gradient(to bottom, #f01010, #eb1d16, #e7251c, #e22c21, #dd3225, #dc3627, #da3a2a, #d93d2c, #db402e, #dd4430, #df4732, #e14a34); }
-
-.texto {
-  padding-top: 3%;
-  width: 100%;
-  height: 50vh;
-  color: #ffffff;
-  font-size: 1.4em;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
+  background-image: linear-gradient(to bottom, #f01010, #eb1d16, #e7251c, #e22c21, #dd3225, #dc3627, #da3a2a, #d93d2c, #db402e, #dd4430, #df4732, #e14a34);
   margin: auto; }
+  .container-texto .texto {
+    padding-top: 3%;
+    width: 100%;
+    height: 50vh;
+    color: #ffffff;
+    font-size: 1.4em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center; }
 
 .container-aside {
   margin-top: 2%;
@@ -123,31 +113,19 @@
   align-items: center;
   text-align: center;
   font-weight: bold; }
-
-.video-prepago {
-  width: 40vw;
-  height: 50vh;
-  transition: all 1s; }
-  .video-prepago:hover {
-    transform: scale(1.2); }
+  .container-aside .video-prepago {
+    width: 40vw;
+    height: 50vh;
+    transition: all 1s; }
+    .container-aside .video-prepago:hover {
+      transform: scale(1.2); }
 
 .iframe {
   width: 40vw;
   height: 50vh;
   transition: all 1s; }
   .iframe:hover {
-    transform: scale(1.2);
     transform: scale(1.2); }
-
-@media screen and (max-width: 767px) {
-  .video-prepago {
-    width: 80vw;
-    height: 70vh;
-    margin: 1%; }
-  .iframe {
-    width: 80vw;
-    height: 70vh;
-    margin: 1%; } }
 
 #footer {
   width: 100%;
@@ -159,27 +137,14 @@
   justify-content: space-between;
   padding-left: 1%;
   padding-right: 1%; }
-
-.footer-texto {
-  color: #ffffff;
-  font-size: 1.4em;
-  font-weight: lighter; }
+  #footer .footer-texto {
+    color: #ffffff;
+    font-size: 1.4em;
+    font-weight: lighter; }
 
 .footer-imagen {
   display: flex;
   width: 3rem; }
-
-@media screen and (max-width: 576px) {
-  #footer {
-    height: 30vh;
-    font-size: 1em;
-    display: flex;
-    flex-direction: column; } }
-
-@media screen and (max-width: 576px) and (max-width: 986px) {
-  #header {
-    height: 40vh;
-    font-size: 1em; } }
 
 /*PASATE A CLARO*/
 .container-porta {
@@ -189,26 +154,8 @@
   flex-direction: row;
   justify-content: center; }
 
-.card-body {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  padding-top: 5%; }
-
-.font-portabilidad {
-  font-size: 1.6em; }
-
-.imagen-movistar {
-  width: 100%;
-  height: 70%;
-  margin: auto;
-  object-fit: contain;
-  transition: all 1s; }
-  .imagen-movistar:hover {
-    transform: scale(1.1); }
-
 .imagen-personal {
-  width: 100%;
+  width: 70%;
   height: 70%;
   margin: auto;
   object-fit: contain;
@@ -216,25 +163,33 @@
   .imagen-personal:hover {
     transform: scale(1.1); }
 
+.imagen-movistar {
+  width: 70%;
+  height: 70%;
+  margin: auto;
+  object-fit: contain;
+  transition: all 1s; }
+  .imagen-movistar:hover {
+    transform: scale(1.1); }
+
+.card-body {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 5%; }
+  .card-body .font-portabilidad {
+    font-size: 1.6em; }
+
 /*LINEA NUEVA*/
 .texto-lnva {
   text-align: center; }
-
-.titulo-lnueva {
-  margin-top: 3%;
-  font-size: 2em;
-  font-weight: bold;
-  color: #000000;
-  animation-duration: 1s;
-  animation-name: slidein; }
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%; }
-  to {
-    margin-left: 0%;
-    width: 100%; } }
+  .texto-lnva .titulo-lnueva {
+    margin-top: 3%;
+    font-size: 2em;
+    font-weight: bold;
+    color: #000000;
+    animation-duration: 1s;
+    animation-name: slidein; }
 
 .subtitulo-lnueva {
   display: inline-block;
@@ -253,44 +208,87 @@
   font-size: 1.8em;
   color: #000000; }
 
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 0%;
+    width: 100%; } }
+
 /*VENTA DE CHIPS*/
 .chips {
+  width: 80%;
   margin: auto; }
+  .chips .card-chips {
+    padding-left: 5%; }
 
 /*CONTACTO*/
 .contacto {
   display: flex;
   flex-direction: row;
   justify-content: center; }
+  .contacto .cajaform-contacto {
+    width: 70vw;
+    height: 70vh;
+    row-gap: 5%;
+    color: #FFFFFF;
+    font-size: 1.4em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    animation-name: animacion__contacto;
+    animation-duration: 10s;
+    animation-iteration-count: infinite; }
 
-.cajaform__contacto {
-  width: 70vw;
-  height: 70vh;
-  row-gap: 5%;
-  color: #FFFFFF;
-  font-size: 1.6em;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 3%;
-  animation-name: animacion__contacto;
-  animation-duration: 10s;
-  animation-iteration-count: infinite; }
+@media screen and (max-width: 768px) {
+  #header {
+    height: 40vh;
+    font-size: 1em; } }
 
-fieldset {
-  width: 400px; }
+@media screen and (max-width: 986px) {
+  #header {
+    height: 40vh;
+    font-size: 1em; } }
 
-.input__contacto {
-  margin: 3%;
-  text-align: center;
-  width: 50%;
-  height: 30px; }
+@media screen and (max-width: 576px) {
+  #footer {
+    height: 30vh;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column; } }
 
-.input__contacto:focus {
-  width: 60%;
-  height: 40px; }
+@media screen and (max-width: 768px) {
+  .card-img-top {
+    margin: auto;
+    width: 70%; } }
+
+@media screen and (max-width: 768px) {
+  .video-prepago {
+    width: 80vw;
+    height: 70vh;
+    margin: 1%; }
+  .iframe {
+    width: 80vw;
+    height: 70vh;
+    margin: 1%; } }
+
+@media screen and (max-width: 768px) {
+  .imagen-movistar {
+    margin: auto;
+    width: 50%; }
+  .imagen-personal {
+    margin: auto;
+    width: 50%; } }
+
+@media screen and (max-width: 768px) {
+  .imagen-lineanva {
+    margin: auto;
+    width: 70%; } }
 
 @keyframes animacion__contacto {
   0% {
@@ -304,8 +302,28 @@ fieldset {
   100% {
     background-color: #000000; } }
 
-.boton-porta {
-  margin-top: 5%; }
+.btn {
+  background-color: #EC3B15;
+  margin-top: 15%;
+  width: 30%;
+  height: 10%;
+  border-radius: 8px;
+  color: #fff; }
+
+.boton-lnva {
+  background-color: #EC3B15;
+  margin: 3%;
+  width: 30%;
+  border-radius: 8px;
+  color: #fff; }
+
+.boton-contacto {
+  margin: 3%;
+  width: 50%;
+  height: 8%;
+  border-radius: 8px;
+  background-color: #0de6ee;
+  color: #ffffff; }
 
 .menu-drop {
   width: 35%; }
@@ -320,21 +338,13 @@ fieldset {
   background-color: #EC3B15;
   color: #ffffff; }
 
-.boton-chips {
-  margin-top: 5%;
-  width: 30%;
-  height: 5%;
-  margin-top: 3%; }
+.clearfix {
+  width: 60%;
+  margin: auto; }
 
-.boton-lnva {
-  width: 30%;
-  height: 5%;
-  margin-top: 3%; }
-
-.boton-chips {
-  width: 30%;
-  height: 5%;
-  margin-top: 3%; }
+.form-control {
+  width: 50%;
+  height: 8%; }
 
 @keyframes opacityPulse {
   0% {

@@ -1,9 +1,30 @@
 
-
-.boton-porta{
-    @extend .boton;
-    margin-top: 5%;
+.btn{
+    background-color: $color-oficial;
+    margin-top:15%;
+    width: 30%;
+    height: 10%;
+    border-radius: 8px;
+    color: #fff;
 }
+
+.boton-lnva{
+    background-color: $color-oficial;
+    margin: 3%;
+    width: 30%;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.boton-contacto{
+    margin: 3%;
+    width: 50%;
+    height: 8%;
+    border-radius: 8px;
+    background-color: #0de6ee;
+    color: #ffffff;
+}
+
 
 .menu-drop{
     width: 35%;
@@ -12,26 +33,15 @@
 .item{
     @include item
 }
-.boton-chips{
-    @extend .boton;
-    margin-top: 5%;
-    width: 30%;
-    height: 5%;
-    margin-top: 3%;
+
+.clearfix{
+    width: 60%;
+    margin: auto;
 }
 
-.boton-lnva {
-    @extend .boton;
-    width: 30%;
-    height: 5%;
-    margin-top: 3%;
-}
-
-.boton-chips{
-    @extend .boton;
-    width: 30%;
-    height: 5%;
-    margin-top: 3%;
+.form-control{
+    width: 50%;
+    height: 8%;
 }
 
 @keyframes opacityPulse {
@@ -39,5 +49,6 @@
     50% {opacity: 1.0;}
     100% {opacity: 0.0;}
 }
+
 
     
