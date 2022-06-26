@@ -1,37 +1,17 @@
 
-.btn{
-    background-color: $color-oficial;
-    margin-top:15%;
-    width: 30%;
-    height: 10%;
-    border-radius: 8px;
-    color: #fff;
+.boton{
+    @include boton
 }
-
 .boton-lnva{
-    background-color: $color-oficial;
-    margin: 3%;
-    width: 30%;
-    border-radius: 8px;
-    color: #fff;
+    width: fit-content;
 }
-
-.boton-contacto{
-    margin: 3%;
-    width: 50%;
-    height: 8%;
-    border-radius: 8px;
-    background-color: #0de6ee;
-    color: #ffffff;
-}
-
 
 .menu-drop{
-    width: 35%;
+    width: 100%;
 }
 
-.item{
-    @include item
+.dropdown-item{
+    @include dropdown-item
 }
 
 .clearfix{
@@ -44,11 +24,12 @@
     height: 8%;
 }
 
-@keyframes opacityPulse {
-    0% {opacity: 0.0;}
-    50% {opacity: 1.0;}
-    100% {opacity: 0.0;}
+.boton-contacto{
+    margin: 3%;
+    width: 50%;
+    height: 10%;
+    border-radius: 8px;
+    background-color: #000000;
+    color: #ffffff;
 }
-
-
-    
+ 

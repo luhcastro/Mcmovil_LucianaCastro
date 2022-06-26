@@ -12,41 +12,41 @@ $tamanio:(
 );
 
 .boton{
-  width:30rem;
-  height: 10rem;
-  height:15%;
+  width: fit-content;
+  height: 15%;
+  margin-top:5%;
+  margin-bottom: 5%;
   background-color: #EC3B15;
   color: #ffffff;
   border: .15em solid;
   border-radius: 5em;
   text-transform: uppercase;
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1.2em;
   animation: opacityPulse 5s ease-out;
   animation-iteration-count: infinite;
   opacity: 0;
 }
-
 @mixin boton {
-  width:50%;
-  height:15%;
+  width: fit-content;
+  height: fit-content;
+  margin-top:5%;
+  margin-bottom: 5%;
   background-color: #EC3B15;
   color: #ffffff;
   border: .15em solid;
   border-radius: 5em;
   text-transform: uppercase;
   text-align: center;
-  font-size: 1.3em;
-  line-height: 2em;
-  cursor: pointer;
+  font-size: 1.2em;
   animation: opacityPulse 5s ease-out;
   animation-iteration-count: infinite;
   opacity: 0;
 }
 
-@mixin item {
+@mixin dropdown-item {
   width: 100%;
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: lighter;
   text-align: center;
   border: 1px;

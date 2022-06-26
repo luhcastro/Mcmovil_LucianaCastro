@@ -1,18 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
 .boton {
-  width: 30rem;
-  height: 10rem;
+  width: fit-content;
   height: 15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   background-color: #EC3B15;
   color: #ffffff;
   border: .15em solid;
   border-radius: 5em;
   text-transform: uppercase;
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1.2em;
   animation: opacityPulse 5s ease-out;
   animation-iteration-count: infinite;
   opacity: 0; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 62.5%; }
+
+body {
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif !important; }
 
 /*HEADER*/
 #header {
@@ -64,10 +78,9 @@
   flex-direction: row;
   justify-content: center; }
 
-.card-img-top {
-  transition: all 1s; }
-  .card-img-top:hover {
-    transform: scale(1.2); }
+.imagen-index:hover {
+  filter: grayscale(80%);
+  transition: all .5s ease-in-out; }
 
 .card-title {
   color: #EC3B15;
@@ -120,11 +133,11 @@
     .container-aside .video-prepago:hover {
       transform: scale(1.2); }
 
-.iframe {
+.youtube-iframe {
   width: 40vw;
   height: 50vh;
   transition: all 1s; }
-  .iframe:hover {
+  .youtube-iframe:hover {
     transform: scale(1.2); }
 
 #footer {
@@ -147,21 +160,22 @@
   width: 3rem; }
 
 /*PASATE A CLARO*/
+.titulo-porta {
+  margin: auto;
+  margin-top: 2%;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: #000000;
+  animation-duration: 1s;
+  animation-name: slidein; }
+
 .container-porta {
-  margin-top: 3%;
+  margin-top: 2%;
   column-gap: 5%;
   display: flex;
   flex-direction: row;
   justify-content: center; }
-
-.imagen-personal {
-  width: 70%;
-  height: 70%;
-  margin: auto;
-  object-fit: contain;
-  transition: all 1s; }
-  .imagen-personal:hover {
-    transform: scale(1.1); }
 
 .imagen-movistar {
   width: 70%;
@@ -170,7 +184,17 @@
   object-fit: contain;
   transition: all 1s; }
   .imagen-movistar:hover {
-    transform: scale(1.1); }
+    filter: sepia(60%);
+    transition: all .5s ease-in-out; }
+
+.imagen-personal {
+  width: 70%;
+  height: 70%;
+  margin: auto;
+  object-fit: contain; }
+  .imagen-personal:hover {
+    filter: sepia(60%);
+    transition: all .5s ease-in-out; }
 
 .card-body {
   width: 100%;
@@ -208,15 +232,24 @@
   font-size: 1.8em;
   color: #000000; }
 
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%; }
-  to {
-    margin-left: 0%;
-    width: 100%; } }
+.card-lnva {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
 
 /*VENTA DE CHIPS*/
+.titulo-chips {
+  margin: auto;
+  margin-top: 2%;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: #000000;
+  animation-duration: 1s;
+  animation-name: slidein; }
+
 .chips {
   width: 80%;
   margin: auto; }
@@ -229,12 +262,13 @@
   flex-direction: row;
   justify-content: center; }
   .contacto .cajaform-contacto {
-    width: 70vw;
-    height: 70vh;
+    width: 50vw;
+    height: 50vh;
     row-gap: 5%;
     color: #FFFFFF;
     font-size: 1.4em;
     text-align: center;
+    border-radius: 2%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -244,6 +278,34 @@
     animation-name: animacion__contacto;
     animation-duration: 10s;
     animation-iteration-count: infinite; }
+
+@keyframes opacityPulse {
+  0% {
+    opacity: 0.0; }
+  50% {
+    opacity: 1.0; }
+  100% {
+    opacity: 0.0; } }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 0%;
+    width: 100%; } }
+
+@keyframes animacion__contacto {
+  0% {
+    background-color: #ff0000 207, 47, 7 241, 10, 10; }
+  25% {
+    background-color: #d93d2c; }
+  50% {
+    background-color: #ff0000; }
+  75% {
+    background-color: #d93d2c; }
+  100% {
+    background-color: #ff0000; } }
 
 @media screen and (max-width: 768px) {
   #header {
@@ -285,52 +347,48 @@
     margin: auto;
     width: 50%; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1115px) {
   .imagen-lineanva {
     margin: auto;
-    width: 70%; } }
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
 
-@keyframes animacion__contacto {
-  0% {
-    background-color: #d11212 207, 47, 7 241, 10, 10; }
-  25% {
-    background-color: #d93d2c; }
-  50% {
-    background-color: #000000; }
-  75% {
-    background-color: #d11212; }
-  100% {
-    background-color: #000000; } }
+@media screen and (max-width: 1115px) {
+  .texto-lnva {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; } }
 
-.btn {
+.boton {
+  width: fit-content;
+  height: fit-content;
+  margin-top: 5%;
+  margin-bottom: 5%;
   background-color: #EC3B15;
-  margin-top: 15%;
-  width: 30%;
-  height: 10%;
-  border-radius: 8px;
-  color: #fff; }
+  color: #ffffff;
+  border: .15em solid;
+  border-radius: 5em;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.2em;
+  animation: opacityPulse 5s ease-out;
+  animation-iteration-count: infinite;
+  opacity: 0; }
 
 .boton-lnva {
-  background-color: #EC3B15;
-  margin: 3%;
-  width: 30%;
-  border-radius: 8px;
-  color: #fff; }
-
-.boton-contacto {
-  margin: 3%;
-  width: 50%;
-  height: 8%;
-  border-radius: 8px;
-  background-color: #0de6ee;
-  color: #ffffff; }
+  width: fit-content; }
 
 .menu-drop {
-  width: 35%; }
+  width: 100%; }
 
-.item {
+.dropdown-item {
   width: 100%;
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: lighter;
   text-align: center;
   border: 1px;
@@ -346,23 +404,10 @@
   width: 50%;
   height: 8%; }
 
-@keyframes opacityPulse {
-  0% {
-    opacity: 0.0; }
-  50% {
-    opacity: 1.0; }
-  100% {
-    opacity: 0.0; } }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-html {
-  font-family: 'Roboto', sans-serif;
-  font-size: 62.5%; }
-
-body {
-  overflow-x: hidden;
-  font-family: 'Roboto', sans-serif !important; }
+.boton-contacto {
+  margin: 3%;
+  width: 50%;
+  height: 10%;
+  border-radius: 8px;
+  background-color: #000000;
+  color: #ffffff; }
