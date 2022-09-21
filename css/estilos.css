@@ -239,6 +239,29 @@ body {
   justify-content: center;
   align-items: center; }
 
+.tituloDatos {
+  text-align: center;
+  margin-top: 2%; }
+
+.inputDatos {
+  color: #000000;
+  font-size: 1.2em;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%; }
+
+.cardLineaNueva {
+  width: 50%;
+  height: 50%;
+  margin: auto; }
+
+#imagenes {
+  background-color: #000000; }
+
 /*VENTA DE CHIPS*/
 .titulo-chips {
   margin: auto;
