@@ -7,23 +7,16 @@ const divSaludo = document.getElementById('saludo')
 const divPlanes = document.getElementById('planes')
 const divImagenes = document.getElementById('imagenes')
 
-
 const abonos =[
     {nombre:'3GB', precio: 750}, 
     {nombre:'5GB', precio: 1020}, 
     {nombre:'8GB', precio: 1490},
 ]
 
-const imagen =[
-    {nombre:'3GB', src: '../assets/perrito1.jpg'}, 
-    {nombre:'5GB', src: '../assets/perrito2.jpg'}, 
-    {nombre:'8GB', src: '../assets/perrito3.jpg'},
-]
-
 botonIngresar.onclick = () => {
- //guardar informacion cuando la persona haga click en un objeto//
+ 
  const usuario ={
-    nombre: inputNombre.value, //value corresponde a lo que la persona guardo en ese input, es la informacion que rescatamos 
+    nombre: inputNombre.value, 
     apellido: inputApellido.value,
     telefono: inputTelefono.value,
 }
@@ -35,7 +28,7 @@ planes ()
 const botonSeleccionar = document.getElementById('botonSeleccionar')
 botonSeleccionar.onclick = () => {
 const planSeleccionado = document.getElementById('selectPlanes').value
-const mensaje = alert(`El plan seleccionado es ${planSeleccionado}`)
+const mensaje = Swal.fire(`El plan seleccionado es ${planSeleccionado}`)
 
 }
 }
