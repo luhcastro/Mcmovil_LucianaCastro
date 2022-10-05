@@ -1,62 +1,41 @@
 const inputNombre = document.getElementById('nombre')
 const inputApellido = document.getElementById('apellido')
 const inputTelefono= document.getElementById('telefono')
-const inputBoton = document.getElementById('botonIngresar')
-const divDatos = document.getElementById('divDatos')
-const divSaludo = document.getElementById('saludo')
-const divPlanes = document.getElementById('planes')
-const divImagenes = document.getElementById('imagenes')
-
-const abonos =[
-    {nombre:'3GB', precio: 750}, 
-    {nombre:'5GB', precio: 1020}, 
-    {nombre:'8GB', precio: 1490},
-]
+const inputEmail= document.getElementById('email')
+const formulario = document.getElementById("formulario")
+const divDatos = document.getElementById("divDatos")
+const divSaludo=document.getElementById("divSaludo")
+const botonIngresar = document.getElementById("botonIngresar")
+const botonEnviar = document.getElementById("botonEnviar")
+const seleccionarPlan= document.getElementById("seleccionarPlan")
 
 botonIngresar.onclick = () => {
- 
- const usuario ={
-    nombre: inputNombre.value, 
-    apellido: inputApellido.value,
-    telefono: inputTelefono.value,
+    const plan = [
+        {nombre: '3GB', precio:870, value:'value1'},
+        {nombre: '5GB', precio:1200, value:'value2'},
+        {nombre: '8GB', precio:1710, value:'value3'}
+       ]
+       localStorage.setItem('planStorage', JSON.stringify(plan))
+       const mensaje = Swal.fire('seleccionaste el plan'+ plan.nombre)
 }
 
-localStorage.setItem('usuarioStorage', JSON.stringify(usuario))
-divDatos.remove()
-saludo(usuario)
-planes ()
-const botonSeleccionar = document.getElementById('botonSeleccionar')
-botonSeleccionar.onclick = () => {
-const planSeleccionado = document.getElementById('selectPlanes').value
-const mensaje = Swal.fire(`El plan seleccionado es ${planSeleccionado}`)
+formulario.onsubmit =  async(SubmitEvent) => {
+    e.preventDefault();
+    
+    const datos = new FormData(this);
+    const respuesta = await fetch(this.action,{
+        method: this.method,
+        body: formulario,
+        headers: {
+            'Accept': 'application/json',
+        }
+
+    })
+
+    if(respuesta.ok) {
+        alert('Gracias por contactarnos')
+}
 
 }
-}
 
-function saludo (user) {
-    const tituloSaludo = document.createElement('h2')
-    tituloSaludo.innerText = `BIENVENID@ ${user.nombre} ${user.apellido}`
-    divSaludo.append(tituloSaludo)
-}
-
-function planes () {
-    const parrafo = document.createElement('h3')
-    parrafo.innerText = 'Selecciona el plan que deseas adquirir'
-    const botonSeleccionar = document.createElement('button')
-    botonSeleccionar.innerText = 'SELECIONAR PLAN'
-    botonSeleccionar.setAttribute('id', 'botonSeleccionar')
-    const selectPlanes = document.createElement('select')
-    selectPlanes.setAttribute('id', 'selectPlanes')
-     abonos.forEach(abono=>{
-         const option = document.createElement('option')
-         option.innerText = `${abono.nombre} $${abono.precio}`
-         selectPlanes.append(option)
-     })
-     const imagen = document.createElement('img')
-     imagen.setAttribute('src', '../assets/perrito2.jpg')
-     divPlanes.append(parrafo)
-     divPlanes.append(selectPlanes)
-     divPlanes.append(botonSeleccionar)
-     divPlanes.append(imagen)
- }
- 
+   

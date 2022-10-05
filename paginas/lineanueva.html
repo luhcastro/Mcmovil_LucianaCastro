@@ -51,21 +51,79 @@
 
  <main>
     <div class="divPrincipal">
-        <div id="divDatos">
-            <h2 class="tituloDatos">INGRESÁ TUS DATOS</h2>
-            <div class="inputDatos">
-                NOMBRE: <input type="text" id="nombre" name="nombre">
-                APELLIDO: <input type="text" id="apellido" name="apellido">
-                TELEFONO DE CONTACTO: <input type="tel" id="telefono" name="tel">
-                <button id="botonIngresar">INGRESAR</button>
+        
+        <div id="divSaludo">
+            <h1 id="tituloPlanes">PLANES MENSUALES PARA TU CELU</h1>
+        </div>
+        
+        <div id="divCard">
+            <div class="card-group">
+                <div class="card" id="card">
+                  <img src="../assets/perrito1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title">PLAN DE 3 GB</h5>
+                     <p class="card-text">Llamadas Ilimitadas. Whatsapp Gratis. Amazon Prime gratis por 3 meses + HBO gratis por 2 meses. Claro Vídeo, Claro Música y Claro Drive.</p>
+                     <p class="card-text"><small class="text-muted">Este abono no contiene gigas de regalo.</small></p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../assets/perrito2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title">PLAN DE 5 GB</h5>
+                     <p class="card-text">Llamadas Ilimitadas. Whatsapp Gratis. Amazon Prime gratis por 3 meses + HBO gratis por 2 meses. Claro Vídeo, Claro Música y Claro Drive.</p>
+                     <p class="card-text"><small class="text-muted">10 GB extras de regalo por 3 meses.</small></p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../assets/perrito3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title">PLAN DE 8 GB</h5>
+                     <p class="card-text">Llamadas Ilimitadas. Whatsapp Gratis. Amazon Prime gratis por 3 meses + HBO gratis por 2 meses. Claro Vídeo, Claro Música y Claro Drive.</p>
+                     <p class="card-text"><small class="text-muted">10 GB extras de regalo por 3 meses.</small></p>
+                  </div>
+                </div>
             </div>
-         <img src="../assets/perrito1.jpg" class="cardLineaNueva" alt="lineanueva">
         </div>
 
-        <div id="saludo"></div>
+        <div id="divDatos">
+            <h2 class="tituloForm">¿QUERES ADQUIRIR UNA LINEA NUEVA?</h2>
+            <h3 class="subtituloForm"> ¡ELEGÍ EL PLAN QUE MAS TE GUSTE Y COMPLETA TUS DATOS!</h3>
 
-        <div id="imagenes"></div>
-        <div id="planes"></div>
+            <select id="seleccionarPlan"name="select">
+                <option value="value1">PLAN DE 3GB</option>
+                <option value="value2" selected>PLAN DE 5GB</option>
+                <option value="value3">PLAN DE 8GB</option>
+            </select>
+
+            <button id="botonIngresar">SELECCIONAR PLAN</button>
+
+            <form id="formulario" action="https://formspree.io/f/xlevnokl" method="POST">
+                <ul>
+                    <li>
+                        <label for ="name">NOMBRE </label>
+                        <input type="text" name="nombre" id="nombre">
+                    </li>
+   
+                    <li>
+                        <label for ="apellido">APELLIDO </label>
+                        <input type="text" name="apellido" id="apellido">
+                    </li>
+   
+                    <li>
+                        <label for ="telefono">TELEFONO </label>
+                        <input type="tel" name="telefono" id="telefono">
+                    </li>
+   
+                    <li>
+                        <label for ="email">E-MAIL </label>
+                        <input type="email" name="correo" id="email">
+                    </li>
+                </ul>
+                <button id="botonEnviar">ENVIAR</button>
+            </form>
+        </div> 
     </div>
  </main>
  
@@ -86,7 +144,7 @@
  
  <!-- Option 1: Bootstrap Bundle with Popper -->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
  <script src="../script/index.js"></script>
 </body>
 </html>
