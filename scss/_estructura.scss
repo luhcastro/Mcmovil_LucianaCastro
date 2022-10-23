@@ -223,53 +223,81 @@
     color: $color-texto;
     animation-duration: 1s;
     animation-name: slidein;
-     
 }
 
-.subtitulo-lnueva {
-  display: inline-block;
-  font-size: 1.8em;
-  font-weight: bold;
-  background-color: #DC2727;
-  color: #FFFFFF;
-}
-
-.beneficios-lnueva {
-    list-style: none;
-    font-size: 1.8em;
-    color:#000000;
+.tituloForm{
+    text-align: center;
+    margin-top: 1%;
     font-weight: bold;
 }
 
-.listado-beneficios{
-    font-size: 1.8em;
-    color: #000000;
-} 
+#select{
+    text-align: center;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
-.card-lnva{
+    .form-select{
+        width: 10%;
+    }
+
+    #botonCalcular{
+        margin: 1%;
+        width: 10%;
+        height: 3rem;
+        text-align: center;
+        background-color: #e22c21;
+        color: #FFFFFF;
+        border-bottom-color: #ffffff;
+    }
+
+    #resultado{
+        text-align: center;
+        width: 10%;
+    }
+}
+
+#formulario{
+    text-align: center;
+    margin-top: 1%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    background-color: #ffffff;
+    
+
+    .input{
+        width: 100%;
+        margin-top: 1%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid;
+            
+    }
+    #botonEnviar{
+       
+        margin-bottom: 1%;
+        margin-left: 1.5%;
+        width: 10%;
+        text-align: center;
+        background-color: #e22c21;
+        color: #ffffff;
+        border-top: #FFFFFF;
+        border-left: #ffffff;
+        border-right: #ffffff;
+        border-bottom: #ffffff;
+    }
 }
 
-.tituloDatos{
-    text-align: center;
-    margin-top: 2%;
-}
 
-.inputDatos{
-    color: #000000;
-    font-size: 1.2em;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items:center;
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
 
 .cardLineaNueva{
     width: 50%;

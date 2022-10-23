@@ -88,37 +88,42 @@
         </div>
 
         <div id="divDatos">
+
             <h2 class="tituloForm">¿QUERES ADQUIRIR UNA LINEA NUEVA?</h2>
-            <h3 class="subtituloForm"> ¡ELEGÍ EL PLAN QUE MAS TE GUSTE Y COMPLETA TUS DATOS!</h3>
+            <h4 class="tituloForm">SELECCIONA EL PLAN QUE DESEAS CONTRATAR</h4>
 
-            <select id="seleccionarPlan"name="select">
-                <option value="value1">PLAN DE 3GB</option>
-                <option value="value2" selected>PLAN DE 5GB</option>
-                <option value="value3">PLAN DE 8GB</option>
-            </select>
-
-            <button id="botonIngresar">SELECCIONAR PLAN</button>
+            <div id="select">
+                <select id="seleccionarPlan" class="form-select" onchange="selectPlan();">
+                    <option class="planSeleccionado" value="PLAN DE 3GB">PLAN DE 3GB</option>
+                    <option class="planSeleccionado" value="PLAN DE 5GB">PLAN DE 5GB</option>
+                    <option class="planSeleccionado" value="PLAN DE 8GB">PLAN DE 8GB</option>
+                    <option class="planSeleccionado" value="PLAN DE 15GB">PLAN DE 15GB</option>
+                </select>
+                    <button id="botonCalcular"><span>CALCULAR PRECIO</span></button>
+                    <input type="text" name="resultado" id="resultado" class="form-control">
+            </div>
 
             <form id="formulario" action="https://formspree.io/f/xlevnokl" method="POST">
-                <ul>
+                <h4 class="tituloForm"> AHORA INGRESÁ TUS DATOS: </h4>
+                <ul id="lista">
                     <li>
-                        <label for ="name">NOMBRE </label>
-                        <input type="text" name="nombre" id="nombre">
+                        <label for ="name" class="form-label">NOMBRE </label>
+                        <input type="text" name="nombre" id="nombre" class="input">
                     </li>
    
                     <li>
-                        <label for ="apellido">APELLIDO </label>
-                        <input type="text" name="apellido" id="apellido">
+                        <label for ="apellido" class="form-label">APELLIDO </label>
+                        <input type="text" name="apellido" id="apellido" class="input">
                     </li>
    
                     <li>
-                        <label for ="telefono">TELEFONO </label>
-                        <input type="tel" name="telefono" id="telefono">
+                        <label for ="telefono" class="form-label">TELEFONO </label>
+                        <input type="tel" name="telefono" id="telefono" class="input">
                     </li>
    
                     <li>
-                        <label for ="email">E-MAIL </label>
-                        <input type="email" name="correo" id="email">
+                        <label for ="email" class="form-label">E-MAIL </label>
+                        <input type="email" name="correo" id="email"class="input">
                     </li>
                 </ul>
                 <button id="botonEnviar">ENVIAR</button>
